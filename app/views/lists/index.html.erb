@@ -1,0 +1,4 @@
+<h1>List contents</h1>
+<% @lists.each do |l| %>
+<p><%= link_to l.title, list_path(l.id) %></p>
+<% end %>
