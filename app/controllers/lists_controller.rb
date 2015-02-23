@@ -1,10 +1,7 @@
 class ListsController < ApplicationController
-  def index
-   # @lists = List.all
-  end
-
+  before_action :authenticate_user!
   def show
-    @list = List.find(params[:id])
+    @list = current_user.list
   end
 
   def new
