@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'items/new'
 
   resources :lists, except: [:index] do
-    resources :items, only: [:create]
+    resources :items
   end
     
 

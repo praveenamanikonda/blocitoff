@@ -1,4 +1,5 @@
-
 <% items.each do |item| %>
   <li> <%= item.name %> </li>
+  Time Remaining: <%= item.days_left %> 
+<%= link_to "Complete", [list, item], method: :delete, class: 'glyphicon glyphicon-ok' %>
 <% end %>
