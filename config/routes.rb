@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'test/robots'
+
   get 'items/new'
 
   resources :lists, except: [:index] do
